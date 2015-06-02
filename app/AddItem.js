@@ -12,22 +12,25 @@ var AddItem = React.createClass({
     })
   },
   handleSubmit: function(e){
-    if(e.keyCode === 13){
+      e.preventDefault();
       this.props.add(this.state.newItem);
       this.setState({
         newItem: ''
       });
-    }
   },
   render: function(){
     return (
-      <div>
-        <input type="text" 
-          className="form-control" 
-          value={this.state.newItem} 
-          placeholder="New Item" 
-          onKeyDown={this.handleSubmit} 
-          onChange={this.handleChange} />
+      <div className="col-sm-6 col-md-offset-3">
+        <form className="form-inline" onSubmit={this.handleSubmit}>
+          <div className="form-group">
+            <input type="text" 
+              className="form-control" 
+              value={this.state.newItem} 
+              placeholder="Add List Item" 
+              onChange={this.handleChange} />
+          </div>
+          <button className="btn btn-primary">Add</button>
+        </form>
       </div>
     )
   }
