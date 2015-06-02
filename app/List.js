@@ -39,5 +39,12 @@ var List = React.createClass({
 				</li>
 			)
 		}.bind(this));
+		return (
+			<ul style={styles.uList}>
+				{ListItems}
+			</ul>
+		)
 	}
-})
+});
+
+module.exports = List;
