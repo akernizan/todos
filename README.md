@@ -1,6 +1,6 @@
-Todos
+<h1>Todos</h1>
 
-<p>Simple todo list app built with React.js</p>
+<p> todo list app built with React.js</p>
 
 <h3>Technologies</h3>
 
@@ -8,4 +8,5 @@ Todos
 	<li>React.js</li>
 	<li>Webpack</li>
 	<li>Node</li>
+	<li>Twitter Bootstrap</li>
 </ul>
